@@ -12,8 +12,16 @@
         android:theme="@style/Theme.ProjetoNoShape"
         tools:targetApi="31">
         <activity
+            android:name=".TelaCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".TelaMenu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -10,27 +10,27 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.projetonoshape.R
 import com.example.projetonoshape.TelaMenu
 
-class MainActivity : AppCompatActivity() {
+class TelaCadastro : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela_cadastro)
 
-        val loginButton: Button = findViewById(R.id.loginbutton)
-        val emailEditText: EditText = findViewById(R.id.editTextTextEmailAddress)
-        val passwordEditText: EditText = findViewById(R.id.editTextTextPassword)
+        val cadastroButton: Button = findViewById(R.id.cadastrobutton)
+        val emailEditText: EditText = findViewById(R.id.editTextEmailAddress)
+        val passwordEditText: EditText = findViewById(R.id.editTextPassword)
 
-        loginButton.setOnClickListener(object : View.OnClickListener {
+        cadastroButton.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
                 val email = emailEditText.text.toString().trim()
                 val password = passwordEditText.text.toString().trim()
 
                 if (isValidEmail(email) && isValidPassword(password)) {
-                    val intent = Intent(this@MainActivity, TelaMenu::class.java)
+                    val intent = Intent(this@TelaCadastro, TelaMenu::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(
-                        this@MainActivity,
+                        this@TelaCadastro,
                         "Credenciais inválidas. Verifique seu email e senha.",
                         Toast.LENGTH_SHORT
                     ).show()

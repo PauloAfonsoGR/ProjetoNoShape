@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".TelaCadastro">
 
     <ImageView
         android:id="@+id/figmaImageView"
@@ -12,44 +12,49 @@
         android:layout_height="match_parent"
         android:background="#4CAF50"
         android:scaleType="fitCenter"
-        android:src="@drawable/tela_de_login"
+        android:src="@drawable/tela_de_cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="117dp" />
 
     <Button
-        android:id="@+id/loginbutton"
+        android:id="@+id/cadastrobutton"
         android:layout_width="309dp"
-        android:layout_height="74dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="200dp"
-        android:text="Login"
+        android:text="Cadastrar-se"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="254dp"
-        android:layout_height="23dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="412dp"
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="258dp"
+        android:layout_height="19dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="281dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="258dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="352dp"
+        android:layout_height="21dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="338dp" />
 
+    <EditText
+        android:id="@+id/editTextPassword2"
+        android:layout_width="258dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="398dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
